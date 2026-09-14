@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ASBU Trivia</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+
+     <!-- START SCREEN -->
+    <section id="start-screen">
+      <h1>ASBU Trivia</h1>
+
+      <p>Test your aviation knowledge!</p>
+
+      <button id="start-btn">Start Trivia</button>
+      <button id="edit-btn">Edit Questions</button>
+    </section>
+
+    <!-- TRIVIA SCREEN -->
+    <section id="trivia-screen" hidden>
+
+      <p id="progress"></p>
+
+      <h2 id="question-text"></h2>
+
+      <div id="options-container"></div>
+
+      <p id="feedback"></p>
+
+      <p id="score">Score: 0</p>
+
+      <button id="next-btn" hidden>Next Question</button>
+
+      <button id="trivia-home-btn">
+        Back to Home
+      </button>
+
+    </section>
+
+
+    <!-- RESULTS SCREEN -->
+    <section id="results-screen" hidden>
+
+      <h2>Quiz Finished!</h2>
+
+      <p id="final-score"></p>
+
+      <button id="restart-btn">
+        Try Again
+      </button>
+
+      <button id="results-home-btn">
+        Back to Home
+      </button>
+
+    </section>
+
+
+    <!-- EDIT SCREEN -->
+    <section id="edit-screen" hidden>
+
+      <h2>Edit Questions</h2>
+
+      <div id="editor-container"></div>
+
+      <button id="add-question-btn">
+        Add Question
+      </button>
+
+      <button id="save-btn">
+        Save Questions
+      </button>
+
+      <button id="edit-home-btn">
+        Back to Home
+      </button>
+
+      <p id="save-message"></p>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
