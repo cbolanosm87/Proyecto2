@@ -1,6 +1,4 @@
-// =====================================
-// QUESTIONS
-// =====================================
+// Preguntas // 
 
 let questions = [
   {
@@ -60,9 +58,7 @@ let questions = [
 ];
 
 
-// =====================================
-// HTML ELEMENTS
-// =====================================
+// Elementos HTML 
 
 const startScreen = document.querySelector("#start-screen");
 const triviaScreen = document.querySelector("#trivia-screen");
@@ -92,18 +88,12 @@ const saveBtn = document.querySelector("#save-btn");
 const saveMessage = document.querySelector("#save-message");
 
 
-// =====================================
-// QUIZ VARIABLES
-// =====================================
+// Variables 
 
 let currentQuestion = 0;
 let score = 0;
 let answered = false;
 
-
-// =====================================
-// SCREEN MANAGEMENT
-// =====================================
 
 function showScreen(screen) {
   startScreen.hidden = true;
@@ -115,9 +105,7 @@ function showScreen(screen) {
 }
 
 
-// =====================================
-// START QUIZ
-// =====================================
+// Funcion para iniciar el quiz 
 
 function startQuiz() {
   currentQuestion = 0;
@@ -131,9 +119,7 @@ function startQuiz() {
 }
 
 
-// =====================================
-// SHOW QUESTION
-// =====================================
+// Funcion para mostrar las preguntas// 
 
 function showQuestion() {
   answered = false;
@@ -165,9 +151,7 @@ function showQuestion() {
 }
 
 
-// =====================================
-// CHECK ANSWER
-// =====================================
+//Funcion para mostrar las respuestas
 
 function checkAnswer(selectedIndex, selectedButton) {
 
@@ -224,9 +208,7 @@ function checkAnswer(selectedIndex, selectedButton) {
 }
 
 
-// =====================================
-// NEXT QUESTION
-// =====================================
+// siguiente pregunta
 
 function nextQuestion() {
 
@@ -243,9 +225,7 @@ function nextQuestion() {
 }
 
 
-// =====================================
-// RESULTS
-// =====================================
+// funcion para mostrar resultados
 
 function showResults() {
 
@@ -256,9 +236,7 @@ function showResults() {
 }
 
 
-// =====================================
-// QUESTION EDITOR
-// =====================================
+// Editor de preguntas
 
 function showEditor() {
 
@@ -270,9 +248,7 @@ function showEditor() {
 }
 
 
-// =====================================
-// RENDER QUESTION EDITOR
-// =====================================
+// generar editor preguntas
 
 function renderEditor() {
 
@@ -285,7 +261,7 @@ function renderEditor() {
     questionBox.classList.add("question-editor");
 
 
-    // QUESTION NUMBER
+    // numero de preguntas
 
     const title = document.createElement("h3");
 
@@ -295,7 +271,7 @@ function renderEditor() {
     questionBox.appendChild(title);
 
 
-    // QUESTION
+    // Pregunta
 
     const questionLabel = document.createElement("label");
 
@@ -313,7 +289,7 @@ function renderEditor() {
     questionBox.appendChild(questionInput);
 
 
-    // OPTIONS
+    // opciones 
 
     question.options.forEach(function (option, optionIndex) {
 
@@ -335,7 +311,7 @@ function renderEditor() {
     });
 
 
-    // CORRECT ANSWER
+    //Respuesta correcta
 
     const correctLabel = document.createElement("label");
 
@@ -372,10 +348,7 @@ function renderEditor() {
   });
 }
 
-
-// =====================================
-// SAVE QUESTIONS
-// =====================================
+// Codigo para guardar preguntas
 
 function saveQuestions() {
 
@@ -422,9 +395,7 @@ function saveQuestions() {
 }
 
 
-// =====================================
-// ADD QUESTION
-// =====================================
+// codigo para agregar preguntas
 
 function addQuestion() {
 
@@ -454,9 +425,7 @@ function addQuestion() {
 }
 
 
-// =====================================
-// EVENT LISTENERS
-// =====================================
+// Eventos
 
 startBtn.addEventListener("click", startQuiz);
 
@@ -471,9 +440,7 @@ saveBtn.addEventListener("click", saveQuestions);
 addQuestionBtn.addEventListener("click", addQuestion);
 
 
-// =====================================
-// HOME BUTTONS
-// =====================================
+// Botones 
 
 triviaHomeBtn.addEventListener("click", function () {
   showScreen(startScreen);

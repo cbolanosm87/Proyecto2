@@ -34,7 +34,7 @@ p {
 }
 
 
-/* BUTTONS */
+/* Botones */
 
 button {
   width: 100%;
@@ -81,7 +81,7 @@ button:hover {
 }
 
 
-/* EDITOR */
+/* Editor de preguntas */
 
 .question-editor {
   border: 1px solid #ccc;
