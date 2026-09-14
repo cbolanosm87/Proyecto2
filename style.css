@@ -59,7 +59,7 @@ button:hover {
 }
 
 
-/* ANSWER OPTIONS */
+/* Opcinoes de respuesta */
 
 .option-btn {
   background-color: #e6e6e6;
@@ -112,7 +112,7 @@ select {
 }
 
 
-/* TABLET / DESKTOP */
+/* Tablet / PC */
 
 @media (min-width: 768px) {
 
